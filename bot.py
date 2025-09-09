@@ -84,7 +84,7 @@ async def cartas(interaction: discord.Interaction):
         await interaction2.response.send_message(
             "📌 Referencia de puntos:",
             ephemeral=True,
-            file=discord.File("C:/Users/USER/Desktop/Okey helper/Referencia.png")
+            file=discord.File("Referencia.png")
         )
     puntos_button.callback = puntos_callback
     view_puntos.add_item(puntos_button)
@@ -105,3 +105,4 @@ if TOKEN is None:
     print("❌ ERROR: No se encontró el token. Crea un archivo .env con DISCORD_TOKEN=tu_token")
 else:
     bot.run(TOKEN)
+
